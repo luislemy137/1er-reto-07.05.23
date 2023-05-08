@@ -12151,27 +12151,27 @@ main {
 }
 
 section.main-index {
-  background-image: url("./assets/img/fondo-main-3.jpg");
+  background-image: url("./assets/img/fondo-main-5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 section.main-index .contenido {
   margin-top: 8%;
-  margin-left: 100px;
+  margin-left: 30px;
 }
 section.main-index .contenido h2, section.main-index .contenido .h2 {
   color: white;
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: bold;
-  -webkit-text-fill-color: #f04f56;
-  -webkit-text-stroke: 2px whitesmoke;
+  -webkit-text-fill-color: #17BEBB;
+  -webkit-text-stroke: 2px white;
   line-height: 100PX;
   width: 40%;
 }
 section.main-index .contenido p {
   color: whitesmoke;
   text-align: justify;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.8;
   word-spacing: 2px;
   width: 70%;
@@ -12184,24 +12184,28 @@ section.main-index .contenido p {
   background-color: #20242b;
 }
 .hero div #cabecera {
-  background-color: #f04f56;
+  background-color: #17BEBB;
   color: white;
+}
+.hero div #cabecera h2, .hero div #cabecera .h2 {
+  font-weight: bold;
 }
 .hero div.card {
   cursor: default;
   transition: all 400ms ease;
 }
 .hero div.card :hover {
-  box-shadow: 0px 1px 10px #f04f56;
-  transform: scale(1.02);
+  box-shadow: 0px 1px 20px #17BEBB;
+  transform: scale(1.03);
 }
 .hero div.card .card-body {
-  background-color: #f04f56;
+  background-color: #17BEBB;
   color: white;
 }
 .hero div.card .card-body h5, .hero div.card .card-body .h5 {
   font-weight: bold;
   margin: 0 auto;
+  font-weight: bold;
 }
 
 @media (max-width: 875px) {
