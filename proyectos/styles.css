@@ -12189,22 +12189,24 @@ main section.main-index .contenido p {
 .hero div #cabecera h2, .hero div #cabecera .h2 {
   font-weight: bold;
 }
-.hero div.card {
-  cursor: default;
-  transition: all 400ms ease;
-}
-.hero div.card :hover {
-  box-shadow: 0px 1px 20px #17BEBB;
-  transform: scale(1.03);
-}
-.hero div.card .card-body {
+.hero .card {
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #17BEBB;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.hero div.card .card-body h5, .hero div.card .card-body .h5 {
-  font-weight: bold;
+.hero .card h5, .hero .card .h5 {
+  padding: 10px;
   margin: 0 auto;
+  color: white;
   font-weight: bold;
+}
+.hero div.card:hover {
+  box-shadow: 0px 1px 20px #17BEBB;
+  transform: scale(1.15);
 }
 
 @media (max-width: 839px) {

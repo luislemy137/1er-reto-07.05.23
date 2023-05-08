@@ -199,31 +199,27 @@ main {
 
 
   }
-
-  div.card {
-
-    cursor: default;
-    transition: all 400ms ease;
-
-    :hover {
-      box-shadow: 0px 1px 20px #17BEBB;
-      transform: scale(1.03);
-
-    }
-
-    .card-body {
-      background-color: #17BEBB;
+  .card{
+    height: fit-content;
+    background-color: #17BEBB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h5{
+      padding: 10px;
+      margin: 0 auto;
       color: white;
-
-
-      h5 {
-        font-weight: bold;
-        margin: 0 auto;
-        font-weight: bold;
-      }
+      font-weight: bold;
     }
-
   }
+  div.card:hover {
+    box-shadow: 0px 1px 20px #17BEBB;
+    transform: scale(1.15);
+  
+  }
+  
+  
 }
 
 // media query
