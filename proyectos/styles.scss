@@ -154,8 +154,10 @@ section.main-index {
 
     h2 {
       color: white;
-      font-size: 4rem;
+      font-size: 5rem;
       font-weight: bold;
+      -webkit-text-fill-color: #f04f56;
+      -webkit-text-stroke:2px whitesmoke;
       line-height: 100PX;
       width: 40%;
     }
@@ -163,6 +165,9 @@ section.main-index {
     p {
       color: whitesmoke;
       text-align: justify;
+      font-size: 1rem;
+      line-height: 1.8;
+      word-spacing: 2px;
       width: 70%;
 
     }
@@ -172,9 +177,12 @@ section.main-index {
 
 .hero {
   padding: 0;
+  
+  
 
   .bienvenida {
     background-color: #20242b;
+    
 
   }
 
@@ -184,9 +192,23 @@ section.main-index {
 
   }
   div.card{
+    
+    cursor: default;
+    transition: all 400ms ease;
+    :hover{
+      box-shadow: 0px 1px 10px #f04f56;
+      transform: scale(1.02);
+      
+    }
     .card-body{
       background-color: #f04f56;
       color: white;
+      
+      
+      h5{
+        font-weight: bold;
+        margin:0 auto;
+      }
     }
 
   }

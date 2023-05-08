@@ -12161,14 +12161,19 @@ section.main-index .contenido {
 }
 section.main-index .contenido h2, section.main-index .contenido .h2 {
   color: white;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: bold;
+  -webkit-text-fill-color: #f04f56;
+  -webkit-text-stroke: 2px whitesmoke;
   line-height: 100PX;
   width: 40%;
 }
 section.main-index .contenido p {
   color: whitesmoke;
   text-align: justify;
+  font-size: 1rem;
+  line-height: 1.8;
+  word-spacing: 2px;
   width: 70%;
 }
 
@@ -12182,9 +12187,21 @@ section.main-index .contenido p {
   background-color: #f04f56;
   color: white;
 }
+.hero div.card {
+  cursor: default;
+  transition: all 400ms ease;
+}
+.hero div.card :hover {
+  box-shadow: 0px 1px 10px #f04f56;
+  transform: scale(1.02);
+}
 .hero div.card .card-body {
   background-color: #f04f56;
   color: white;
+}
+.hero div.card .card-body h5, .hero div.card .card-body .h5 {
+  font-weight: bold;
+  margin: 0 auto;
 }
 
 @media (max-width: 875px) {
