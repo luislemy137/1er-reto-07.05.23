@@ -1,0 +1,208 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+:root {
+  --font: 'Poppins', sans-serif;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  /* width: 80%; */
+
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+
+
+h3,
+h4
+{
+font-size: 1.8rem;
+}
+
+h5{
+  font-size: 1rem;
+}
+
+
+
+a {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+
+}
+
+.scrolled {
+  background-color: #385975;
+  transition: background-color 0.8s ease;
+}
+
+
+.nav_ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav_ul li a {
+  color: white;
+}
+
+// menu hamburguesa
+.panel-btn {
+  display:none !important;
+}
+
+.panel {
+  position: fixed;
+  z-index: 990;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: #567594e5;
+  transition: transform 0.3s ease;
+  transform: translate(0, -100%);
+}
+
+.panel.is-active {
+  transform: translate(0, 0);
+}
+
+.panel .menu {
+  margin-top: 6rem;
+  flex-direction: column;
+  width: inherit;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.menu a {
+  padding: 2rem;
+  width: inherit;
+  display: block;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.menu a:hover {
+  font-weight: bold;
+  background-color: #385975;
+
+}
+.hamburger-inner{
+  color: white !important;
+}
+// fin menu hamburguesa
+
+
+
+
+
+main{
+  overflow-x: hidden;
+}
+
+section.main-index {
+  background-image: url("./assets/img/fondo-main-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .contenido {
+    margin-top: 8%;
+    margin-left: 100px;
+
+    h2 {
+      color: white;
+      font-size: 4rem;
+      font-weight: bold;
+      line-height: 100PX;
+      width: 40%;
+    }
+
+    p {
+      color: whitesmoke;
+      text-align: justify;
+      width: 70%;
+
+    }
+
+  }
+}
+
+.hero {
+  padding: 0;
+
+  .bienvenida {
+    background-color: #20242b;
+
+  }
+
+  div #cabecera {
+    background-color: #f04f56;
+    color: white;
+
+  }
+}
+
+// media query
+
+@media (max-width:875px) {
+  header{
+    display: none;
+  }
+  .panel-btn {
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    right: 1vh;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background-color: #A4D1FF !important;
+  }
+}

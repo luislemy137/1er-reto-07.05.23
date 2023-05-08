@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <header>
+    <a href="#">
+      <h1>ESTOFADORES</h1>
+    </a>
+    <nav>
+      <ul class="nav_ul">
+        <li><a href="../index.html">Servicios</a></li>
+        <li><a href="../proyectos/proyectos.html">Proyectos</a></li>
+        <li><a href="../cards/team.html">Nosotros</a></li>
+        <li><a href="#">Contactanos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <button class="panel-btn hamburger hamburger--slider" type="button" title="btn-mobile">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+  <aside class="panel">
+    <nav class="menu">
+      <a href="#servicios">Servicios</a>
+      <a href="./proyectos/proyectos.html">Proyectos</a>
+      <a href="./cards/team.html">Nosotros</a>
+      <a href="#">Contactanos</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section class="main-index container-fluid">
+      <div class="row">
+        <div class="contenido col-12">
+          <h2>VEA ALGUNOS PROYECTOS DE ÉXITO RECIENTE</h2>
+          <P class="p-5">
+            En la actualidad, tener una presencia en línea efectiva es esencial para cualquier negocio exitoso. En este sentido, contar con una página web profesional y bien desarrollada puede marcar la diferencia en términos de visibilidad, atracción de clientes potenciales y conversión en ventas. En nuestra agencia digital de desarrollo web, nos especializamos en crear soluciones digitales personalizadas para nuestros clientes, que se adapten a sus necesidades específicas y objetivos comerciales. Contamos con un equipo altamente capacitado en diseño web, desarrollo de aplicaciones y estrategias de marketing digital, y utilizamos las últimas herramientas tecnológicas para garantizar resultados excepcionales. Si buscas llevar tu negocio al siguiente nivel, ¡estamos listos para ayudarte!</P>
+        </div>
+      </div>
+    </section>
+    <section class="hero container-fluid">
+      <div class="row bienvenida justify-content-around">
+        <div id="cabecera" class="col-12 text-center p-0">
+          <h2 class="p-2">LANDING PAGE CASOS DE EXITO</h2>
+        </div>
+        <div class="card text-center p-0 border border-white border border-4 mt-5 mb-5" style="width: 18rem;">
+          <a href="https://luislemy137.github.io/SASS/"><img src="./assets/img/py-1.png" class="card-img-top" alt="mani"
+              width="100%"></a>
+          <div class="card-body ">
+            <h5 class="card-title ">PECAMANIA</h5>
+          </div>
+        </div>
+        <div class="card text-center p-0 border border-white border border-4 mt-5 mb-5" style="width: 18rem;">
+          <a href="#"><img src="./assets/img/py-2.png" class="card-img-top" alt="mani" width="100%"></a>
+          <div class="card-body">
+            <h5 class="card-title">HACK A BOSS</h5>
+          </div>
+        </div>
+        <div class="card text-center p-0 border border-white border border-4 mt-5 mb-5" style="width: 18rem;">
+          <a href="#"><img src="./assets/img/py-3.png" class="card-img-top" alt="mani" width="100%"></a>
+          <div class="card-body">
+            <h5 class="card-title">MAGIA</h5>
+          </div>
+        </div>
+        <div class="card text-center p-0 border border-white border border-4 mt-5 mb-5" style="width: 18rem;">
+          <a href="#"><img src="./assets/img/py-4.png" class="card-img-top" alt="mani" width="100%"></a>
+          <div class="card-body">
+            <h5 class="card-title">METACAR</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <script>
+    const header = document.querySelector('header')
+    const btnMenu = document.querySelector('.panel-btn');
+    const menuPanel = document.querySelector('.panel')
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+      btnMenu.addEventListener('click', () => {
+        menuPanel.classList.toggle('is-active')
+        btnMenu.classList.toggle('is-active')
+      });
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+    });
+  </script>
+
+
+</body>
+
+
+</html>

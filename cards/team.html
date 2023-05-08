@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/style1.css">
+  <link rel="stylesheet" href="../home/src/styles/style.css">
+  <title>Team profile cards</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">
+      <h1>ESTOFADORES</h1>
+    </a>
+    <nav>
+      <ul class="nav_ul">
+        <li><a href="../index.html">Servicios</a></li>
+        <li><a href="../proyectos/proyectos.html">Proyectos</a></li>
+        <li><a href="cards/team.html">Nosotros</a></li>
+        <li><a href="../contacto/formulario.html">Contactanos</a></li>
+      </ul>
+    </nav>
+
+    <button class="panel-btn hamburger hamburger--slider" type="button" title="btn-mobile">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  
+    <aside class="panel">
+      <nav class="menu">
+        <a href="#servicios">Servicios</a>
+        <a href="./proyectos/proyectos.html">Proyectos</a>
+        <a href="./cards/team.html">Nosotros</a>
+        <a href="../contacto/formulario.html">Contactanos</a>
+      </nav>
+    </aside>
+
+
+  </header>
+  <main>
+    <section class="contenedor-cards">
+      <article class="card">
+        <div class="card-image">
+          <img src="../cards/src/img/profile2.jpg" alt="Profile image">
+        </div>
+        <p class="name">Milder Carreón</p>
+        <p>UX / UI developer</p>
+        <p>Estudiante de Codigo Tecsup, formandome en desarrollo web front-end y back-end, con conocimientos en Html, Css, Js, React y Python.</p>
+        <div class="socials">
+          <button class="github"><a href="https://github.com/YanlDev"><i class="fab fa-github"></i></a></button>
+          <button class="twitter"><a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a></button>
+          <button class="pinterest"><a href="https://www.linkedin.com/in/yaniv-carreon/"><i
+                class="fab fa-linkedin"></a></i></button>
+          </article>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="../cards/src/img/profile1.jpg" alt="Profile image">
+        </div>
+        <p class="name">Fiorella Orellana</p>
+        <p>UX / UI developer</p>
+        <p>Estudiante de Codigo Tecsup, formandome en desarrollo web front-end y back-end, con experiencia en JavaScript, Css, Html, Diseño Gráfico y UX UI.</p>
+        <div class="socials">
+          <button class="github"><a href="https://github.com/Forellana21"><i class="fab fa-github"></i></a></button>
+          <button class="twitter"><a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a></button>
+          <button class="pinterest"><a href="https://www.linkedin.com/in/fiorella-orellana-meza-620182269/"><i
+                class="fab fa-linkedin"></a></i></button>
+        </div>
+      </div>  
+  
+      <div class="card">
+        <div class="card-image">
+          <img src="../cards/src/img/a2.jpg" alt="Profile image">
+        </div>
+        <p class="name">Luis Moscoso</p>
+        <p>Front-End developer</p>
+        <p>Estudiante de Codigo Tecsup, formandome en desarrollo web front-end y back-end, con experiencia en desarrollo web usando tecnologías como Html, Css, Js, Sass, Boostrap, Tailwind Css.</p>
+        <div class="socials">
+          <button class="github"><a href="https://github.com/"><i class="fab fa-github"></i></a></button>
+          <button class="twitter"><a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a></button>
+          <button class="pinterest"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></a></i></button>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-image">
+          <img src="../cards/src/img/profile3.jpg" alt="Profile image">
+        </div>
+        <p class="name">Alejandra Catacora</p>
+        <p>Back-End developer</p>
+        <p>Estudiante de Codigo Tecsup, formandome en desarrollo web front-end y back-end, con habilidades en Python, Tkinter, PyQt5, Django, Js.</p>
+        <div class="socials">
+          <button class="github"><a href="https://github.com/adletgamer"><i class="fab fa-github"></i></a></button>
+          <button class="twitter"><a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a></button>
+          <button class="pinterest"><a href="https://www.linkedin.com/in/alejandra-catacora-vasquez-7155931b8/"><i
+                class="fab fa-linkedin"></a></i></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const header = document.querySelector('header')
+    const btnMenu = document.querySelector('.panel-btn');
+    const menuPanel = document.querySelector('.panel')
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+      btnMenu.addEventListener('click', () => {
+        menuPanel.classList.toggle('is-active')
+        btnMenu.classList.toggle('is-active')
+      });
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

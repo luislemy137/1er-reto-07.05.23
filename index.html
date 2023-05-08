@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web developers</title>
+  <link rel="stylesheet" href="home/src/styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="contacto/src/style/style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <h1>ESTOFADORES</h1>
+    </a>
+    <nav>
+      <ul class="nav_ul">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="proyectos/proyectos.html">Proyectos</a></li>
+        <li><a href="cards/team.html">Nosotros</a></li>
+        <li><a href="contacto/formulario.html">Contactanos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <button class="panel-btn hamburger hamburger--slider" type="button" title="btn-mobile">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+  <aside class="panel">
+    <nav class="menu">
+      <a href="#servicios">Servicios</a>
+      <a href="./proyectos/proyectos.html">Proyectos</a>
+      <a href="./cards/team.html">Nosotros</a>
+      <a href="#">Contactanos</a>
+    </nav>
+  </aside>
+
+
+  <main>
+    <article class="hero">
+      <div class="hero_paragraph">
+        <h2>Diseña tu web con nosotros</h2>
+        <p>Somos una agencia digital especializada en diseño de páginas web hechas a medida, con diseños únicos y
+          estrategias efectivas en redes sociales. Garantizamos el crecimiento de tu marca en línea. ¡Contáctanos ahora
+          para mejorar tu presencia digital!</p>
+        <a href="#">Cotizar Ahora!</a>
+      </div>
+    </article>
+    <section class="servicios">
+      <article class="web_a_medida" id="servicios">
+        <div class="web_a_medida_paragraph">
+          <h2>Diseño web a medida</h2>
+          <p>Creamos páginas web a medida con alto nivel gráfico, intuitivas, emotivas, aplicando diseño inteligente que
+            cumpla con sus objetivos de negocio.</p>
+        </div>
+        <figure>
+          <img src="home/src/img/undraw_designer_girl_re_h54c.svg" alt="web a medida">
+        </figure>
+      </article>
+      <article class="responsive">
+        <div class="responsive_paragraph">
+          <h2>Responsive y diseño UX</h2>
+          <p>Contamos con especialistas en diseño para que tu web sea visible desde cualquier dispositivo ya sea
+            smartphone, tablet o computadora de escritorio. Nos especializamos en el diseño de:</p>
+        </div>
+        <img src="https://mastertej.com/wp-content/uploads/2021/01/mobile-responsive-design-example.jpg"
+          alt="Responsive web" ;">
+      </article>
+      <article class="eligenos">
+        <h2>¿Por qué elegirnos?</h2>
+        <!-- Slider -->
+        <ul>
+          <li>✔ + de 1 Mes de experiencia.</li>
+          <li>✔ + Ventas si nos eliges.</li>
+          <li>✔ Usamos Metodologías agiles (Scrum).</li>
+          <li>✔ Somos buenos chicos.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <footer>
+  </footer>
+  <script>
+    const header = document.querySelector('header')
+    const btnMenu = document.querySelector('.panel-btn');
+    const menuPanel = document.querySelector('.panel')
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+      btnMenu.addEventListener('click', () => {
+        menuPanel.classList.toggle('is-active')
+        btnMenu.classList.toggle('is-active')
+      });
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+    });
+  </script>
+
+</body>
+<map name=""></map>
+
+</html>
