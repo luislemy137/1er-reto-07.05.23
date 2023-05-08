@@ -32,12 +32,11 @@ h1 {
 
 
 h3,
-h4
-{
-font-size: 1.8rem;
+h4 {
+  font-size: 1.8rem;
 }
 
-h5{
+h5 {
   font-size: 1rem;
 }
 
@@ -86,7 +85,7 @@ header {
 
 // menu hamburguesa
 .panel-btn {
-  display:none !important;
+  display: none !important;
 }
 
 .panel {
@@ -130,88 +129,96 @@ header {
   background-color: #385975;
 
 }
-.hamburger-inner{
+
+.hamburger-inner {
   color: white !important;
 }
+
 // fin menu hamburguesa
 
 
 
 
 
-main{
+main {
   overflow-x: hidden;
-}
 
-section.main-index {
-  background-image: url("./assets/img/fondo-main-5.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  section.main-index {
+    background-image: url("./assets/img/fondo-main-5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  .contenido {
-    margin-top: 8%;
-    margin-left: 30px;
+    .contenido {
+      margin-top: 8%;
+      margin-left: 30px;
 
-    h2 {
-      color: white;
-      font-size: 4.5rem;
-      font-weight: bold;
-      -webkit-text-fill-color: #17BEBB;
-      -webkit-text-stroke:2px white;
-      line-height: 100PX;
-      width: 40%;
+      h2 {
+        color: white;
+        font-size: 4.5rem;
+        font-weight: bold;
+        -webkit-text-fill-color: #17BEBB;
+        -webkit-text-stroke: 2px white;
+        line-height: 100PX;
+        width: 40%;
+      }
+
+      p {
+        color: whitesmoke;
+        text-align: justify;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        word-spacing: 2px;
+        width: 70%;
+
+      }
+
     }
-
-    p {
-      color: whitesmoke;
-      text-align: justify;
-      font-size: 1.2rem;
-      line-height: 1.8;
-      word-spacing: 2px;
-      width: 70%;
-
-    }
-
   }
+
 }
+
 
 .hero {
   padding: 0;
-  
-  
+
+
 
   .bienvenida {
     background-color: #20242b;
-    
+
 
   }
 
   div #cabecera {
     background-color: #17BEBB;
     color: white;
-    h2{
+
+    h2 {
       font-weight: bold;
     }
 
 
   }
-  div.card{
-    
+
+  div.card {
+
     cursor: default;
     transition: all 400ms ease;
-    :hover{
+
+    :hover {
       box-shadow: 0px 1px 20px #17BEBB;
       transform: scale(1.03);
-      
+
     }
-    .card-body{
+
+    .card-body {
       background-color: #17BEBB;
-      color:white;
-      
-      
-      h5{
+      color: white;
+
+
+      h5 {
         font-weight: bold;
-        margin:0 auto;
+        margin: 0 auto;
         font-weight: bold;
       }
     }
@@ -221,10 +228,11 @@ section.main-index {
 
 // media query
 
-@media (max-width:875px) {
-  header{
+@media (max-width:839px) {
+  header {
     display: none;
   }
+
   .panel-btn {
     position: fixed;
     z-index: 999;
@@ -238,5 +246,65 @@ section.main-index {
     justify-content: center;
     align-items: center;
     background-color: #A4D1FF !important;
+  }
+
+  main {
+    overflow-x: hidden;
+
+    section.main-index {
+      background-image: url("./assets/img/fondo-main-5.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .contenido {
+        margin-top: 4%;
+
+
+        h2 {
+          color: white;
+          font-size: 4rem;
+          font-weight: bold;
+          -webkit-text-fill-color: #17BEBB;
+          -webkit-text-stroke: 2px white;
+          line-height: 100PX;
+          width: 65%;
+
+        }
+
+        p {
+          color: whitesmoke;
+          text-align: justify;
+          font-size: 1.1rem;
+          line-height: 1.8;
+          word-spacing: 2px;
+          width: 92%;
+
+
+
+
+        }
+
+      }
+    }
+
+  }
+}
+
+@media (max-width:414px) {
+
+  main section.main-index{
+    
+    .contenido{
+      margin: 0;
+      h2{
+        font-size: 4rem;
+
+        
+      }
+      p{
+        display: none;
+      }
+    }
+    
   }
 }
