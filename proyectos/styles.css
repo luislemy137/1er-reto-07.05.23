@@ -12182,6 +12182,10 @@ section.main-index .contenido p {
   background-color: #f04f56;
   color: white;
 }
+.hero div.card .card-body {
+  background-color: #f04f56;
+  color: white;
+}
 
 @media (max-width: 875px) {
   header {
